@@ -227,17 +227,7 @@ export default function QuizApp() {
             </h2>
           </div>
           {/* Answer Options */}
-          <div className="mb-3 sm:mb-4">
-            <p className="text-xs sm:text-sm text-gray-500 mb-2 sm:mb-3">
-              💡 Tip: Use keyboard shortcuts (1-4 or A-D) to select answers
-              quickly!
-              {currentIndex > 0 && (
-                <span className="ml-2">
-                  Use ← arrow key to go back to previous questions.
-                </span>
-              )}
-            </p>
-          </div>
+
           <div className="space-y-2 sm:space-y-3">
             {currentQuestion.options.map((option, index) => {
               const isSelected = selectedAnswer === option;
