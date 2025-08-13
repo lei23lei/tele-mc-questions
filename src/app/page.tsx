@@ -13,7 +13,7 @@ interface Question {
 export default function QuizApp() {
   const [currentQuestion, setCurrentQuestion] = useState<Question | null>(null);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
-  const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
+  // const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
   const [score, setScore] = useState(0);
   const [totalAnswered, setTotalAnswered] = useState(0);
   const [showExplanation, setShowExplanation] = useState(false);
@@ -46,7 +46,6 @@ export default function QuizApp() {
     const question = getRandomQuestion();
     setCurrentQuestion(question);
     setSelectedAnswer(null);
-    setIsCorrect(null);
     setShowExplanation(false);
     setUsedQuestions((prev) => new Set([...prev, question.name]));
 
@@ -61,7 +60,6 @@ export default function QuizApp() {
 
     setSelectedAnswer(answer);
     const correct = answer === currentQuestion?.correctAnswer;
-    setIsCorrect(correct);
 
     if (correct) {
       setScore((prev) => prev + 1);
@@ -136,11 +134,6 @@ export default function QuizApp() {
       // Restore previous answer if it exists
       const previousAnswer = answerHistory[previousQuestion.name];
       setSelectedAnswer(previousAnswer || null);
-      setIsCorrect(
-        previousAnswer
-          ? previousAnswer === previousQuestion.correctAnswer
-          : null
-      );
       setShowExplanation(previousAnswer !== undefined);
     }
   };
