@@ -323,7 +323,7 @@ export default function QuizApp() {
 
         {/* Navigation Buttons */}
         <div className="text-center mt-4 sm:mt-6">
-          <div className="flex flex-col sm:flex-row gap-3 justify-between">
+          <div className="flex flex-row gap-3 justify-between">
             <button
               onClick={handlePreviousQuestion}
               disabled={currentIndex <= 0}
