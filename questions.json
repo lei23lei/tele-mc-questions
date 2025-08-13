@@ -1,0 +1,1007 @@
+[
+  {
+    "name": "question1",
+    "question": "Which OSI layer is responsible for logical addressing and routing?",
+    "options": ["Application", "Network", "Transport", "Data Link"],
+    "correctAnswer": "Network"
+  },
+  {
+    "name": "question2",
+    "question": "Which organization manages global top-level domain allocation?",
+    "options": ["IEEE", "ICANN", "IETF", "ISO"],
+    "correctAnswer": "ICANN"
+  },
+  {
+    "name": "question3",
+    "question": "A LAN is typically deployed over:",
+    "options": [
+      "Multiple continents",
+      "A limited geographical area",
+      "The public Internet",
+      "Satellite links"
+    ],
+    "correctAnswer": "A limited geographical area"
+  },
+  {
+    "name": "question4",
+    "question": "In the TCP/IP model, the Internet layer corresponds to which OSI layer?",
+    "options": ["Data Link", "Network", "Transport", "Application"],
+    "correctAnswer": "Network"
+  },
+  {
+    "name": "question5",
+    "question": "Which of the following is not a network component category?",
+    "options": ["Devices", "Media", "Applications", "Services"],
+    "correctAnswer": "Applications"
+  },
+  {
+    "name": "question6",
+    "question": "Which protocol suite formed the basis of the modern Internet?",
+    "options": ["AppleTalk", "TCP/IP", "Novell NetWare", "X.25"],
+    "correctAnswer": "TCP/IP"
+  },
+  {
+    "name": "question7",
+    "question": "A switch operates mainly at which OSI layer?",
+    "options": ["Data Link", "Transport", "Network", "Physical"],
+    "correctAnswer": "Data Link"
+  },
+  {
+    "name": "question8",
+    "question": "Which is not a benefit of standardization?",
+    "options": [
+      "Interoperability",
+      "Vendor lock-in",
+      "Compatibility",
+      "Consistency"
+    ],
+    "correctAnswer": "Vendor lock-in"
+  },
+  {
+    "name": "question9",
+    "question": "Which OSI layer ensures reliable, end-to-end communication?",
+    "options": ["Network", "Transport", "Data Link", "Application"],
+    "correctAnswer": "Transport"
+  },
+  {
+    "name": "question10",
+    "question": "ARPANET was funded by:",
+    "options": ["NASA", "U.S. Department of Defense", "DARPA only", "MIT"],
+    "correctAnswer": "U.S. Department of Defense"
+  },
+  {
+    "name": "question11",
+    "question": "Which application layer protocol is used to retrieve email from a mail server to a client?",
+    "options": ["SMTP", "POP", "FTP", "HTTP"],
+    "correctAnswer": "POP"
+  },
+  {
+    "name": "question12",
+    "question": "In a client-server model, which statement is true?",
+    "options": [
+      "Clients always have static IPs",
+      "The server is always-on",
+      "Clients communicate directly with each other",
+      "No permanent IPs are required for servers"
+    ],
+    "correctAnswer": "The server is always-on"
+  },
+  {
+    "name": "question13",
+    "question": "Which DNS server type holds the official IP mappings for a domain?",
+    "options": [
+      "Root server",
+      "TLD server",
+      "Authoritative server",
+      "Local cache server"
+    ],
+    "correctAnswer": "Authoritative server"
+  },
+  {
+    "name": "question14",
+    "question": "Which protocol dynamically assigns IP addresses to hosts?",
+    "options": ["DNS", "DHCP", "FTP", "HTTP"],
+    "correctAnswer": "DHCP"
+  },
+  {
+    "name": "question15",
+    "question": "In DNS hierarchy, `.com` is an example of a:",
+    "options": [
+      "Root domain",
+      "Subdomain",
+      "Top-Level Domain (TLD)",
+      "Fully Qualified Domain Name (FQDN)"
+    ],
+    "correctAnswer": "Top-Level Domain (TLD)"
+  },
+  {
+    "name": "question16",
+    "question": "What is the default port for HTTP?",
+    "options": ["25", "80", "53", "443"],
+    "correctAnswer": "80"
+  },
+  {
+    "name": "question17",
+    "question": "Which tool can be used to manually query a DNS server?",
+    "options": ["traceroute", "nslookup", "ping", "netstat"],
+    "correctAnswer": "nslookup"
+  },
+  {
+    "name": "question18",
+    "question": "In a peer-to-peer application, each device:",
+    "options": [
+      "Acts only as a client",
+      "Acts only as a server",
+      "Can act as both client and server",
+      "Requires central coordination"
+    ],
+    "correctAnswer": "Can act as both client and server"
+  },
+  {
+    "name": "question19",
+    "question": "Which application layer protocol transfers files between systems using TCP?",
+    "options": ["FTP", "UDP", "POP", "DNS"],
+    "correctAnswer": "FTP"
+  },
+  {
+    "name": "question20",
+    "question": "What is the purpose of the resolver in DNS?",
+    "options": [
+      "Store permanent mappings",
+      "Forward queries and cache responses",
+      "Assign IP addresses",
+      "Translate URLs into HTML"
+    ],
+    "correctAnswer": "Forward queries and cache responses"
+  },
+  {
+    "name": "question21",
+    "question": "Which transport layer protocol provides connection-oriented communication?",
+    "options": ["UDP", "TCP", "ICMP", "HTTP"],
+    "correctAnswer": "TCP"
+  },
+  {
+    "name": "question22",
+    "question": "What is the main purpose of a port number in TCP/UDP?",
+    "options": [
+      "Identify the IP version used",
+      "Identify the application/service",
+      "Specify the packet size",
+      "Determine network topology"
+    ],
+    "correctAnswer": "Identify the application/service"
+  },
+  {
+    "name": "question23",
+    "question": "Which step in the TCP three-way handshake involves sending SYN and ACK flags together?",
+    "options": [
+      "Client initiates session",
+      "Server responds with SYN-ACK",
+      "Client sends ACK",
+      "Connection termination"
+    ],
+    "correctAnswer": "Server responds with SYN-ACK"
+  },
+  {
+    "name": "question24",
+    "question": "UDP is best suited for:",
+    "options": [
+      "File transfers",
+      "Real-time audio/video streaming",
+      "Email",
+      "Database queries"
+    ],
+    "correctAnswer": "Real-time audio/video streaming"
+  },
+  {
+    "name": "question25",
+    "question": "In TCP, which field specifies how many bytes can be sent before an acknowledgement is required?",
+    "options": [
+      "Sequence Number",
+      "Window Size",
+      "Urgent Pointer",
+      "Header Length"
+    ],
+    "correctAnswer": "Window Size"
+  },
+  {
+    "name": "question26",
+    "question": "Which mechanism is used by TCP to control the rate of data flow?",
+    "options": [
+      "Sequence numbering",
+      "Sliding window",
+      "Checksum",
+      "Port filtering"
+    ],
+    "correctAnswer": "Sliding window"
+  },
+  {
+    "name": "question27",
+    "question": "Which protocol operates without guaranteed delivery, ordering, or flow control?",
+    "options": ["TCP", "UDP", "HTTP", "FTP"],
+    "correctAnswer": "UDP"
+  },
+  {
+    "name": "question28",
+    "question": "In TCP, the ACK number indicates:",
+    "options": [
+      "The last byte sent",
+      "The next expected byte",
+      "Total bytes in the session",
+      "The header length"
+    ],
+    "correctAnswer": "The next expected byte"
+  },
+  {
+    "name": "question29",
+    "question": "Which tool can you use to check open TCP/UDP connections on a host?",
+    "options": ["ping", "nslookup", "netstat", "ipconfig"],
+    "correctAnswer": "netstat"
+  },
+  {
+    "name": "question30",
+    "question": "A TCP connection is closed gracefully using:",
+    "options": [
+      "Two TCP segments",
+      "Four TCP segments",
+      "One FIN segment",
+      "UDP reset packets"
+    ],
+    "correctAnswer": "Four TCP segments"
+  },
+  {
+    "name": "question31",
+    "question": "An IPv4 address consists of how many bits?",
+    "options": ["16", "32", "48", "64"],
+    "correctAnswer": "32"
+  },
+  {
+    "name": "question32",
+    "question": "Which class of IPv4 addresses supports the largest number of hosts per network?",
+    "options": ["Class A", "Class B", "Class C", "Class D"],
+    "correctAnswer": "Class A"
+  },
+  {
+    "name": "question33",
+    "question": "A MAC address is expressed using:",
+    "options": [
+      "Binary only",
+      "Decimal numbers",
+      "Hexadecimal digits",
+      "Octal numbers"
+    ],
+    "correctAnswer": "Hexadecimal digits"
+  },
+  {
+    "name": "question34",
+    "question": "Which portion of a MAC address is assigned by the manufacturer?",
+    "options": [
+      "Last 3 bytes",
+      "First 3 bytes (OUI)",
+      "Middle 2 bytes",
+      "Randomly generated each boot"
+    ],
+    "correctAnswer": "First 3 bytes (OUI)"
+  },
+  {
+    "name": "question35",
+    "question": "In Python’s socket module, which constant specifies an IPv4 address family?",
+    "options": ["AF_INET", "AF_INET6", "SOCK_STREAM", "IPPROTO_TCP"],
+    "correctAnswer": "AF_INET"
+  },
+  {
+    "name": "question36",
+    "question": "What is the main role of a socket in networking?",
+    "options": [
+      "Assign MAC addresses",
+      "Act as an endpoint for communication",
+      "Translate IP addresses",
+      "Provide DNS resolution"
+    ],
+    "correctAnswer": "Act as an endpoint for communication"
+  },
+  {
+    "name": "question37",
+    "question": "In classful IPv4 addressing, addresses starting with 110 in binary belong to:",
+    "options": ["Class A", "Class B", "Class C", "Class D"],
+    "correctAnswer": "Class C"
+  },
+  {
+    "name": "question38",
+    "question": "Which Python method establishes a connection to a server socket?",
+    "options": ["bind()", "connect()", "listen()", "accept()"],
+    "correctAnswer": "connect()"
+  },
+  {
+    "name": "question39",
+    "question": "In socket programming, which function on the server side waits for incoming connections?",
+    "options": ["connect()", "listen()", "send()", "recv()"],
+    "correctAnswer": "listen()"
+  },
+  {
+    "name": "question40",
+    "question": "Which class of IP addresses is reserved for multicast?",
+    "options": ["Class A", "Class C", "Class D", "Class E"],
+    "correctAnswer": "Class D"
+  },
+  {
+    "name": "question41",
+    "question": "Which protocol is connectionless?",
+    "options": ["TCP", "UDP", "ICMP", "HTTP"],
+    "correctAnswer": "UDP"
+  },
+  {
+    "name": "question42",
+    "question": "What is the main advantage of UDP over TCP?",
+    "options": [
+      "Reliability",
+      "Low overhead and faster transmission",
+      "Guaranteed delivery",
+      "Flow control"
+    ],
+    "correctAnswer": "Low overhead and faster transmission"
+  },
+  {
+    "name": "question43",
+    "question": "In Python, which socket type is used for TCP?",
+    "options": ["SOCK_STREAM", "SOCK_DGRAM", "AF_INET", "AF_UNIX"],
+    "correctAnswer": "SOCK_STREAM"
+  },
+  {
+    "name": "question44",
+    "question": "Which protocol is preferred for applications like video streaming?",
+    "options": ["TCP", "UDP", "FTP", "SMTP"],
+    "correctAnswer": "UDP"
+  },
+  {
+    "name": "question45",
+    "question": "What happens if a UDP packet is lost?",
+    "options": [
+      "It is retransmitted",
+      "It is discarded without retransmission",
+      "The connection resets",
+      "The server resends it automatically"
+    ],
+    "correctAnswer": "It is discarded without retransmission"
+  },
+  {
+    "name": "question46",
+    "question": "Which function binds a socket to a local address?",
+    "options": ["bind()", "listen()", "connect()", "accept()"],
+    "correctAnswer": "bind()"
+  },
+  {
+    "name": "question47",
+    "question": "TCP ensures data arrives in:",
+    "options": [
+      "Any order",
+      "Correct order",
+      "Random order",
+      "Segmented order"
+    ],
+    "correctAnswer": "Correct order"
+  },
+  {
+    "name": "question48",
+    "question": "Which method sends data to a specific address in UDP?",
+    "options": ["sendto()", "send()", "write()", "push()"],
+    "correctAnswer": "sendto()"
+  },
+  {
+    "name": "question49",
+    "question": "Which method on a TCP server waits for client connections?",
+    "options": ["accept()", "connect()", "recv()", "listen()"],
+    "correctAnswer": "accept()"
+  },
+  {
+    "name": "question50",
+    "question": "UDP is typically used for:",
+    "options": [
+      "File downloads",
+      "Real-time gaming",
+      "Email transfer",
+      "Database sync"
+    ],
+    "correctAnswer": "Real-time gaming"
+  },
+  {
+    "name": "question51",
+    "question": "How many bits make up an IPv4 address?",
+    "options": ["16", "32", "48", "64"],
+    "correctAnswer": "32"
+  },
+  {
+    "name": "question52",
+    "question": "Which IPv4 class provides the largest host capacity per network?",
+    "options": ["Class A", "Class B", "Class C", "Class D"],
+    "correctAnswer": "Class A"
+  },
+  {
+    "name": "question53",
+    "question": "A MAC address is typically written using:",
+    "options": [
+      "Binary digits only",
+      "Decimal octets",
+      "Hexadecimal pairs",
+      "Octal triplets"
+    ],
+    "correctAnswer": "Hexadecimal pairs"
+  },
+  {
+    "name": "question54",
+    "question": "The vendor-assigned portion of a MAC address is the:",
+    "options": [
+      "Last 3 bytes",
+      "First 3 bytes (OUI)",
+      "Middle 2 bytes",
+      "Random portion"
+    ],
+    "correctAnswer": "First 3 bytes (OUI)"
+  },
+  {
+    "name": "question55",
+    "question": "Which Python socket family is used for IPv4?",
+    "options": ["AF_INET", "AF_INET6", "SOCK_STREAM", "IPPROTO_TCP"],
+    "correctAnswer": "AF_INET"
+  },
+  {
+    "name": "question56",
+    "question": "What is a socket in network programming?",
+    "options": [
+      "A MAC address assignment tool",
+      "An endpoint for communication",
+      "A DNS cache",
+      "A routing metric"
+    ],
+    "correctAnswer": "An endpoint for communication"
+  },
+  {
+    "name": "question57",
+    "question": "IPv4 addresses starting with binary '110' belong to which class?",
+    "options": ["Class A", "Class B", "Class C", "Class D"],
+    "correctAnswer": "Class C"
+  },
+  {
+    "name": "question58",
+    "question": "On the client side, which method initiates a TCP connection?",
+    "options": ["bind()", "connect()", "listen()", "accept()"],
+    "correctAnswer": "connect()"
+  },
+  {
+    "name": "question59",
+    "question": "On a TCP server, which call blocks until a new client connects and returns a new socket?",
+    "options": ["listen()", "accept()", "recv()", "send()"],
+    "correctAnswer": "accept()"
+  },
+  {
+    "name": "question60",
+    "question": "Which IP class is reserved for multicast traffic?",
+    "options": ["Class A", "Class C", "Class D", "Class E"],
+    "correctAnswer": "Class D"
+  },
+  {
+    "name": "question61",
+    "question": "Which statement about UDP is correct?",
+    "options": [
+      "It requires a handshake before sending data",
+      "It is connectionless and has no handshake",
+      "It guarantees in-order delivery",
+      "It provides built-in retransmissions"
+    ],
+    "correctAnswer": "It is connectionless and has no handshake"
+  },
+  {
+    "name": "question62",
+    "question": "Which UDP API receives both data and the sender's address in Python?",
+    "options": ["recv()", "recvfrom()", "sendto()", "accept()"],
+    "correctAnswer": "recvfrom()"
+  },
+  {
+    "name": "question63",
+    "question": "Which function is typically used by a UDP client to transmit a datagram?",
+    "options": ["send()", "sendto()", "write()", "connect()"],
+    "correctAnswer": "sendto()"
+  },
+  {
+    "name": "question64",
+    "question": "Which applications most often prefer UDP due to latency sensitivity?",
+    "options": [
+      "Email",
+      "VoIP/real-time streaming",
+      "Database replication",
+      "File backup"
+    ],
+    "correctAnswer": "VoIP/real-time streaming"
+  },
+  {
+    "name": "question65",
+    "question": "Which statement about TCP is true?",
+    "options": [
+      "It does not use port numbers",
+      "It provides reliable, byte-stream delivery",
+      "It cannot segment data",
+      "It never retransmits data"
+    ],
+    "correctAnswer": "It provides reliable, byte-stream delivery"
+  },
+  {
+    "name": "question66",
+    "question": "Before data exchange, TCP peers establish a connection via:",
+    "options": [
+      "Two-way handshake",
+      "Three-way handshake",
+      "Four-way handshake",
+      "No handshake"
+    ],
+    "correctAnswer": "Three-way handshake"
+  },
+  {
+    "name": "question67",
+    "question": "Which call binds a server socket to a local address and port?",
+    "options": ["listen()", "bind()", "accept()", "connect()"],
+    "correctAnswer": "bind()"
+  },
+  {
+    "name": "question68",
+    "question": "In a UDP echo server, how is the client's address determined?",
+    "options": [
+      "From a global variable",
+      "From the return values of recvfrom()",
+      "From the socket's local address",
+      "From DNS reverse lookup"
+    ],
+    "correctAnswer": "From the return values of recvfrom()"
+  },
+  {
+    "name": "question69",
+    "question": "Which is a characteristic of UDP compared to TCP?",
+    "options": [
+      "Higher overhead",
+      "Lower overhead",
+      "Guaranteed delivery",
+      "Built-in flow control"
+    ],
+    "correctAnswer": "Lower overhead"
+  },
+  {
+    "name": "question70",
+    "question": "On a TCP server, which call returns the connected client socket and address?",
+    "options": ["listen()", "accept()", "recv()", "getsockname()"],
+    "correctAnswer": "accept()"
+  },
+  {
+    "name": "question71",
+    "question": "The minimum IPv4 header length is:",
+    "options": ["10 bytes", "20 bytes", "24 bytes", "40 bytes"],
+    "correctAnswer": "20 bytes"
+  },
+  {
+    "name": "question72",
+    "question": "What happens to the IPv4 TTL field at each router hop?",
+    "options": [
+      "It increases by one",
+      "It stays constant",
+      "It decreases by one",
+      "It resets to 255"
+    ],
+    "correctAnswer": "It decreases by one"
+  },
+  {
+    "name": "question73",
+    "question": "The IPv4 'Protocol' field identifies:",
+    "options": [
+      "The link-layer technology",
+      "The transport-layer payload (e.g., TCP=6, UDP=17)",
+      "The application-layer protocol",
+      "The routing algorithm used"
+    ],
+    "correctAnswer": "The transport-layer payload (e.g., TCP=6, UDP=17)"
+  },
+  {
+    "name": "question74",
+    "question": "The IPv4 header checksum covers:",
+    "options": [
+      "Header only",
+      "Header and payload",
+      "Payload only",
+      "Neither header nor payload"
+    ],
+    "correctAnswer": "Header only"
+  },
+  {
+    "name": "question75",
+    "question": "Which of the following is a private IPv4 address range?",
+    "options": [
+      "172.16.0.0 – 172.31.255.255",
+      "172.32.0.0 – 172.47.255.255",
+      "11.0.0.0 – 11.255.255.255",
+      "223.0.0.0 – 239.255.255.255"
+    ],
+    "correctAnswer": "172.16.0.0 – 172.31.255.255"
+  },
+  {
+    "name": "question76",
+    "question": "Which address is used for a limited broadcast on IPv4 networks?",
+    "options": ["255.255.255.255", "0.0.0.0", "224.0.0.1", "127.0.0.1"],
+    "correctAnswer": "255.255.255.255"
+  },
+  {
+    "name": "question77",
+    "question": "A directed broadcast to 172.16.4.0/24 would use which destination address?",
+    "options": [
+      "172.16.4.0",
+      "172.16.4.255",
+      "172.16.255.255",
+      "255.255.255.255"
+    ],
+    "correctAnswer": "172.16.4.255"
+  },
+  {
+    "name": "question78",
+    "question": "Which statement best describes DHCP in IPv4 networks?",
+    "options": [
+      "Assigns IPs permanently to hosts",
+      "Leases IP configuration including mask and gateway",
+      "Only assigns DNS servers",
+      "Only assigns default gateway"
+    ],
+    "correctAnswer": "Leases IP configuration including mask and gateway"
+  },
+  {
+    "name": "question79",
+    "question": "Bitwise AND between an IP address and its subnet mask is used to determine the:",
+    "options": [
+      "Broadcast address",
+      "Network address",
+      "Default gateway",
+      "MAC address"
+    ],
+    "correctAnswer": "Network address"
+  },
+  {
+    "name": "question80",
+    "question": "IPv4 multicast addresses reside in which range?",
+    "options": [
+      "224.0.0.0 – 239.255.255.255",
+      "240.0.0.0 – 255.255.255.255",
+      "192.0.0.0 – 223.255.255.255",
+      "0.0.0.0 – 1.255.255.255"
+    ],
+    "correctAnswer": "224.0.0.0 – 239.255.255.255"
+  },
+  {
+    "name": "question81",
+    "question": "/26 networks provide how many usable host addresses per subnet?",
+    "options": ["30", "32", "62", "64"],
+    "correctAnswer": "62"
+  },
+  {
+    "name": "question82",
+    "question": "Borrowing 3 bits from a /24 yields how many subnets?",
+    "options": ["4", "6", "8", "16"],
+    "correctAnswer": "8"
+  },
+  {
+    "name": "question83",
+    "question": "Why is subnetting commonly used in enterprise networks?",
+    "options": [
+      "To increase collision domains",
+      "To contain broadcasts and improve performance",
+      "To eliminate routers",
+      "To reduce security"
+    ],
+    "correctAnswer": "To contain broadcasts and improve performance"
+  },
+  {
+    "name": "question84",
+    "question": "For communication between different subnets, what device is required?",
+    "options": ["Switch", "Router", "Hub", "Bridge"],
+    "correctAnswer": "Router"
+  },
+  {
+    "name": "question85",
+    "question": "What is a key advantage of VLSM over traditional subnetting?",
+    "options": [
+      "All subnets are equal size",
+      "Allows different subnet sizes per need",
+      "Eliminates subnet masks",
+      "Removes need for routing"
+    ],
+    "correctAnswer": "Allows different subnet sizes per need"
+  },
+  {
+    "name": "question86",
+    "question": "A /23 subnet provides how many usable host addresses?",
+    "options": ["254", "510", "512", "1022"],
+    "correctAnswer": "510"
+  },
+  {
+    "name": "question87",
+    "question": "The number of subnets created by borrowing b bits is:",
+    "options": ["2^b", "2^b - 2", "2^b + 2", "2^(32-b)"],
+    "correctAnswer": "2^b"
+  },
+  {
+    "name": "question88",
+    "question": "From a /16, to obtain at least 200 subnets, how many bits must be borrowed?",
+    "options": ["7 bits", "8 bits", "9 bits", "10 bits"],
+    "correctAnswer": "8 bits"
+  },
+  {
+    "name": "question89",
+    "question": "Borrowing 10 bits from a /8 results in what new prefix length?",
+    "options": ["/18", "/17", "/20", "/16"],
+    "correctAnswer": "/18"
+  },
+  {
+    "name": "question90",
+    "question": "Why are /30 or /31 prefixes often used on point-to-point links?",
+    "options": [
+      "To allow many hosts",
+      "To conserve address space",
+      "To ease broadcast forwarding",
+      "To simplify ARP tables"
+    ],
+    "correctAnswer": "To conserve address space"
+  },
+  {
+    "name": "question91",
+    "question": "In CPython, the GIL primarily limits:",
+    "options": [
+      "I/O concurrency",
+      "True parallel execution of threads",
+      "Process creation",
+      "Socket bandwidth"
+    ],
+    "correctAnswer": "True parallel execution of threads"
+  },
+  {
+    "name": "question92",
+    "question": "Which model is generally best for CPU-bound workloads in Python?",
+    "options": ["Threading", "Multiprocessing", "asyncio", "Greenlets"],
+    "correctAnswer": "Multiprocessing"
+  },
+  {
+    "name": "question93",
+    "question": "Which model uses cooperative multitasking with 'await'?",
+    "options": ["Threading", "asyncio", "Multiprocessing", "Select/poll only"],
+    "correctAnswer": "asyncio"
+  },
+  {
+    "name": "question94",
+    "question": "In socketserver, ThreadingMixIn will:",
+    "options": [
+      "Spawn a thread per request",
+      "Spawn a process per request",
+      "Use a single-threaded event loop",
+      "Queue all requests serially"
+    ],
+    "correctAnswer": "Spawn a thread per request"
+  },
+  {
+    "name": "question95",
+    "question": "ForkingMixIn-based servers primarily use:",
+    "options": ["Threads", "Processes", "Coroutines", "Signals only"],
+    "correctAnswer": "Processes"
+  },
+  {
+    "name": "question96",
+    "question": "Threading is typically preferred over multiprocessing when workloads are:",
+    "options": [
+      "CPU-bound and heavy math",
+      "I/O-bound with many connections",
+      "Compute-intensive",
+      "GPU-accelerated"
+    ],
+    "correctAnswer": "I/O-bound with many connections"
+  },
+  {
+    "name": "question97",
+    "question": "Which threading API waits for a thread to finish?",
+    "options": ["start()", "join()", "run()", "daemon()"],
+    "correctAnswer": "join()"
+  },
+  {
+    "name": "question98",
+    "question": "Which call returns the number of live Thread objects?",
+    "options": [
+      "threading.count()",
+      "threading.active_count()",
+      "threading.alive()",
+      "threading.threads()"
+    ],
+    "correctAnswer": "threading.active_count()"
+  },
+  {
+    "name": "question99",
+    "question": "Compared to processes, threads are generally:",
+    "options": [
+      "Heavier and slower to start",
+      "Lighter and faster to start",
+      "Isolated with separate memory",
+      "Unscheduled by OS"
+    ],
+    "correctAnswer": "Lighter and faster to start"
+  },
+  {
+    "name": "question100",
+    "question": "To build a forking TCP server with socketserver you would subclass:",
+    "options": [
+      "TCPServer only",
+      "ForkingMixIn and TCPServer",
+      "ThreadingMixIn and UDPServer",
+      "BaseRequestHandler only"
+    ],
+    "correctAnswer": "ForkingMixIn and TCPServer"
+  },
+  {
+    "name": "question101",
+    "question": "A host uses the default gateway when:",
+    "options": [
+      "The destination is in the same subnet",
+      "The destination is in a different subnet",
+      "The DNS server is unreachable",
+      "ARP fails"
+    ],
+    "correctAnswer": "The destination is in a different subnet"
+  },
+  {
+    "name": "question102",
+    "question": "Which metric does RIP primarily use to select routes?",
+    "options": ["Bandwidth", "Hop count", "Delay", "Reliability"],
+    "correctAnswer": "Hop count"
+  },
+  {
+    "name": "question103",
+    "question": "In routing, the most specific matching route in the table is chosen. This principle is called:",
+    "options": [
+      "Shortest path first",
+      "Longest prefix match",
+      "Round-robin routing",
+      "Administrative distance"
+    ],
+    "correctAnswer": "Longest prefix match"
+  },
+  {
+    "name": "question104",
+    "question": "Which router memory typically stores the startup configuration?",
+    "options": ["RAM", "NVRAM", "ROM", "Flash"],
+    "correctAnswer": "NVRAM"
+  },
+  {
+    "name": "question105",
+    "question": "Upon receiving a frame, what is a router's first action in the forwarding process?",
+    "options": [
+      "Look up ARP",
+      "Check the Frame Check Sequence (FCS) for errors",
+      "Rewrite the source MAC",
+      "Forward immediately"
+    ],
+    "correctAnswer": "Check the Frame Check Sequence (FCS) for errors"
+  },
+  {
+    "name": "question106",
+    "question": "In host routing tables, a route marked 'on-link' indicates:",
+    "options": [
+      "It requires a VPN",
+      "The destination is directly reachable without a gateway",
+      "The route is static",
+      "The route is dynamic"
+    ],
+    "correctAnswer": "The destination is directly reachable without a gateway"
+  },
+  {
+    "name": "question107",
+    "question": "A default route in IPv4 is represented as:",
+    "options": [
+      "255.255.255.255/32",
+      "0.0.0.0/0",
+      "127.0.0.0/8",
+      "224.0.0.0/4"
+    ],
+    "correctAnswer": "0.0.0.0/0"
+  },
+  {
+    "name": "question108",
+    "question": "Routers learn about directly connected networks:",
+    "options": [
+      "Only via dynamic protocols",
+      "Automatically by interface state",
+      "Only via static routes",
+      "From DNS servers"
+    ],
+    "correctAnswer": "Automatically by interface state"
+  },
+  {
+    "name": "question109",
+    "question": "Which component typically stores the IOS image on a router?",
+    "options": ["NVRAM", "Flash", "ROM", "RAM"],
+    "correctAnswer": "Flash"
+  },
+  {
+    "name": "question110",
+    "question": "Which device is responsible for interconnecting different IP networks?",
+    "options": ["Switch", "Router", "Bridge", "Hub"],
+    "correctAnswer": "Router"
+  },
+  {
+    "name": "question111",
+    "question": "Which sublayer provides flow control and acknowledgement services?",
+    "options": ["Physical", "LLC", "MAC", "Network"],
+    "correctAnswer": "LLC"
+  },
+  {
+    "name": "question112",
+    "question": "An Ethernet MAC address is how long?",
+    "options": ["32 bits", "48 bits", "64 bits", "128 bits"],
+    "correctAnswer": "48 bits"
+  },
+  {
+    "name": "question113",
+    "question": "The minimum Ethernet payload size (before padding) is:",
+    "options": ["8 bytes", "46 bytes", "64 bytes", "1500 bytes"],
+    "correctAnswer": "46 bytes"
+  },
+  {
+    "name": "question114",
+    "question": "What does a switch do with a frame whose destination MAC is not in its table?",
+    "options": [
+      "Drops it",
+      "Sends to default gateway only",
+      "Floods it out all ports except the incoming port",
+      "Sends it back to source"
+    ],
+    "correctAnswer": "Floods it out all ports except the incoming port"
+  },
+  {
+    "name": "question115",
+    "question": "The FCS in an Ethernet frame is used for:",
+    "options": [
+      "Encryption",
+      "Error detection using CRC",
+      "Compression",
+      "Flow control"
+    ],
+    "correctAnswer": "Error detection using CRC"
+  },
+  {
+    "name": "question116",
+    "question": "How many bytes are in the Ethernet preamble?",
+    "options": ["1", "4", "7", "8"],
+    "correctAnswer": "7"
+  },
+  {
+    "name": "question117",
+    "question": "The Start Frame Delimiter (SFD) follows the preamble and:",
+    "options": [
+      "Identifies the frame start",
+      "Carries VLAN tags",
+      "Contains the payload type",
+      "Stores the CRC"
+    ],
+    "correctAnswer": "Identifies the frame start"
+  },
+  {
+    "name": "question118",
+    "question": "In classic Ethernet, the 'Type' field is:",
+    "options": ["1 byte", "2 bytes", "4 bytes", "8 bytes"],
+    "correctAnswer": "2 bytes"
+  },
+  {
+    "name": "question119",
+    "question": "Switches learn MAC addresses by inspecting which field of incoming frames?",
+    "options": ["Destination MAC", "Source MAC", "Type", "FCS"],
+    "correctAnswer": "Source MAC"
+  },
+  {
+    "name": "question120",
+    "question": "Which is a MAC sublayer responsibility?",
+    "options": [
+      "Assigning IP addresses",
+      "Frame delimiting and addressing",
+      "End-to-end flow control",
+      "Routing between subnets"
+    ],
+    "correctAnswer": "Frame delimiting and addressing"
+  }
+]
