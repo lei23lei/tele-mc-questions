@@ -18,6 +18,11 @@ export default function QuizApp() {
   const [totalAnswered, setTotalAnswered] = useState(0);
   const [showExplanation, setShowExplanation] = useState(false);
   const [usedQuestions, setUsedQuestions] = useState<Set<string>>(new Set());
+  const [questionHistory, setQuestionHistory] = useState<Question[]>([]);
+  const [currentIndex, setCurrentIndex] = useState(-1);
+  const [answerHistory, setAnswerHistory] = useState<{ [key: string]: string }>(
+    {}
+  );
 
   // Get a random question that hasn't been used yet
   const getRandomQuestion = () => {
@@ -44,6 +49,10 @@ export default function QuizApp() {
     setIsCorrect(null);
     setShowExplanation(false);
     setUsedQuestions((prev) => new Set([...prev, question.name]));
+
+    // Add to history
+    setQuestionHistory((prev) => [...prev, question]);
+    setCurrentIndex((prev) => prev + 1);
   };
 
   // Handle answer selection
@@ -60,11 +69,26 @@ export default function QuizApp() {
 
     setTotalAnswered((prev) => prev + 1);
     setShowExplanation(true);
+
+    // Save answer to history
+    if (currentQuestion) {
+      setAnswerHistory((prev) => ({
+        ...prev,
+        [currentQuestion.name]: answer,
+      }));
+    }
   };
 
   // Handle keyboard navigation
   useEffect(() => {
     const handleKeyPress = (event: KeyboardEvent) => {
+      // Handle previous question navigation (always available if there are previous questions)
+      if (event.key === "ArrowLeft" && currentIndex > 0) {
+        event.preventDefault();
+        handlePreviousQuestion();
+        return;
+      }
+
       if (selectedAnswer !== null) {
         if (event.key === "Enter" || event.key === " ") {
           event.preventDefault();
@@ -95,11 +119,30 @@ export default function QuizApp() {
 
     window.addEventListener("keydown", handleKeyPress);
     return () => window.removeEventListener("keydown", handleKeyPress);
-  }, [selectedAnswer, currentQuestion]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [selectedAnswer, currentQuestion, currentIndex]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Handle next question
   const handleNextQuestion = () => {
     loadNewQuestion();
+  };
+
+  // Handle previous question
+  const handlePreviousQuestion = () => {
+    if (currentIndex > 0) {
+      const previousQuestion = questionHistory[currentIndex - 1];
+      setCurrentQuestion(previousQuestion);
+      setCurrentIndex((prev) => prev - 1);
+
+      // Restore previous answer if it exists
+      const previousAnswer = answerHistory[previousQuestion.name];
+      setSelectedAnswer(previousAnswer || null);
+      setIsCorrect(
+        previousAnswer
+          ? previousAnswer === previousQuestion.correctAnswer
+          : null
+      );
+      setShowExplanation(previousAnswer !== undefined);
+    }
   };
 
   // Handle restart quiz
@@ -107,6 +150,9 @@ export default function QuizApp() {
     setScore(0);
     setTotalAnswered(0);
     setUsedQuestions(new Set());
+    setQuestionHistory([]);
+    setCurrentIndex(-1);
+    setAnswerHistory({});
     loadNewQuestion();
   };
 
@@ -134,7 +180,7 @@ export default function QuizApp() {
         {/* Header */}
         <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6 mb-4 sm:mb-8">
           <div className="flex flex-col gap-4">
-            <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 text-center">
+            <h1 className="text-xl sm:text-2xl font-bold text-gray-800 text-center">
               Networking Quiz
             </h1>
             <div className="grid grid-cols-2 sm:flex sm:flex-row gap-2 sm:gap-4 text-center">
@@ -160,7 +206,7 @@ export default function QuizApp() {
             </div>
             <button
               onClick={handleRestartQuiz}
-              className="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 text-sm sm:text-base"
+              className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200 text-sm sm:text-base"
             >
               Restart Quiz
             </button>
@@ -173,6 +219,11 @@ export default function QuizApp() {
             <div className="flex items-center justify-between mb-3 sm:mb-4">
               <span className="text-xs sm:text-sm text-gray-500 font-medium">
                 Question {totalAnswered + 1}
+                {currentIndex > 0 && (
+                  <span className="ml-2 text-blue-600">
+                    (← {currentIndex} previous questions available)
+                  </span>
+                )}
               </span>
               <span className="text-xs sm:text-sm text-gray-500">
                 {usedQuestions.size} of {questionsData.length} used
@@ -182,12 +233,16 @@ export default function QuizApp() {
               {currentQuestion.question}
             </h2>
           </div>
-
           {/* Answer Options */}
           <div className="mb-3 sm:mb-4">
             <p className="text-xs sm:text-sm text-gray-500 mb-2 sm:mb-3">
               💡 Tip: Use keyboard shortcuts (1-4 or A-D) to select answers
               quickly!
+              {currentIndex > 0 && (
+                <span className="ml-2">
+                  Use ← arrow key to go back to previous questions.
+                </span>
+              )}
             </p>
           </div>
           <div className="space-y-2 sm:space-y-3">
@@ -240,8 +295,7 @@ export default function QuizApp() {
               );
             })}
           </div>
-
-          {/* Result Message */}
+          {/* Result Message
           {showExplanation && (
             <div
               className={`mt-4 sm:mt-6 p-3 sm:p-4 rounded-lg ${
@@ -276,25 +330,38 @@ export default function QuizApp() {
                       : `The correct answer is: ${currentQuestion.correctAnswer}`}
                   </p>
                   <p className="text-xs text-gray-500 mt-1 sm:mt-2">
-                    Press Enter or Space to continue to the next question
+                    Press Enter/Space for next question
                   </p>
                 </div>
               </div>
             </div>
-          )}
+          )} */}
         </div>
 
-        {/* Next Question Button */}
-        {showExplanation && (
-          <div className="text-center mt-4 sm:mt-6">
+        {/* Navigation Buttons */}
+        <div className="text-center mt-4 sm:mt-6">
+          <div className="flex flex-col sm:flex-row gap-3 justify-between">
             <button
-              onClick={handleNextQuestion}
-              className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 sm:px-8 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl text-sm sm:text-base w-full sm:w-auto"
+              onClick={handlePreviousQuestion}
+              disabled={currentIndex <= 0}
+              className={`font-semibold py-3 px-6 sm:px-8 rounded-lg transition-colors duration-200 shadow-lg text-sm sm:text-base w-full sm:w-auto ${
+                currentIndex <= 0
+                  ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+                  : "bg-gray-600 hover:bg-gray-700 text-white hover:shadow-xl"
+              }`}
             >
-              Next Question
+              ← Previous
             </button>
+            {showExplanation && (
+              <button
+                onClick={handleNextQuestion}
+                className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 sm:px-8 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl text-sm sm:text-base w-full sm:w-auto"
+              >
+                Next →
+              </button>
+            )}
           </div>
-        )}
+        </div>
 
         {/* Progress Bar */}
         <div className="mt-4 sm:mt-8 bg-white rounded-lg shadow-lg p-3 sm:p-4">
